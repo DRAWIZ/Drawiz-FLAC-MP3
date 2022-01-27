@@ -1,3 +1,3 @@
 
-bash setup.sh
+bash run.sh
 python bot.py
