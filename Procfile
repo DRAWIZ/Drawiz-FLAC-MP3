@@ -1,3 +1,3 @@
 
 bash run.sh
-python bot.py
+worker python bot.py
