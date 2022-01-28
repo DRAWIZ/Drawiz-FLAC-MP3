@@ -40,9 +40,9 @@ async def faq(message):
     Note that the tool fetches results from YouTube Music and it isn't 100 percent accurate.
     \
     """)
-@bot.message_handler(commands=['up'])
-async def up_check(message):
-    await bot.reply_to(message, "Bot is up and running.")
+@bot.message_handler(commands=['start'])
+async def start_check(message):
+    await bot.reply_to(message, "Welcome To Drawiz Spotify Downloader 🎵 Use Command /help for More Details.")
 
 @bot.message_handler(commands=['flac'])
 async def download_flac(message):
