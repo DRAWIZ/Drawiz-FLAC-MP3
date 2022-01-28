@@ -4,7 +4,7 @@ import fnmatch
 import asyncio
 from telebot.async_telebot import AsyncTeleBot
 
-botToken = 5286223389:AAHI_d6AmnuDsNbOomWYIQJqEEudi1NRBNA
+botToken = "5286223389:AAHI_d6AmnuDsNbOomWYIQJqEEudi1NRBNA"
 
 bot = AsyncTeleBot(botToken, parse_mode=None)
 
