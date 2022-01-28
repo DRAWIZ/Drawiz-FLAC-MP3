@@ -43,7 +43,7 @@ async def download_flac(message):
     if str.find("track")!=-1:
         print("is track")
         realSong = songLink.replace("/flac", "")
-        await bot.reply_to(message, "Fetching song...")
+        await bot.reply_to(message, "Finding Song Using Drawiz Spotify Bot...")
         DownloadSong = "bash magic.sh '{}' -f -t".format(realSong)
         os.system(DownloadSong)
         f = open("link.txt", "r")
@@ -54,7 +54,7 @@ async def download_flac(message):
     elif str.find("album")!=-1 or str.find("playlist")!=-1:
         print("is album or playlist")
         realSong = songLink.replace("/flac", "")
-        await bot.reply_to(message, "Fetching album / playlist. This will take a while.")
+        await bot.reply_to(message, "Finding album / playlist Using Drawiz Spotify Bot. This will take a while.")
         DownloadSong = "bash magic.sh '{}' -f -a".format(realSong)
         os.system(DownloadSong)
         f = open("link.txt", "r")
@@ -65,7 +65,7 @@ async def download_flac(message):
     else:
         print("is maybe query")
         realSong = songLink.replace("/flac", "")
-        tryQuery = "Trying to search for '{}' on Spotify...".format(realSong)
+        tryQuery = "Trying to search for '{}' on Drawiz Spotify Bot...".format(realSong)
         await bot.reply_to(message, tryQuery)
         DownloadSong = "bash magic.sh '{}' -f -t".format(realSong)
         os.system(DownloadSong)
@@ -83,7 +83,7 @@ async def download_mp3(message):
     if str.find("track")!=-1:
         print("is track")
         realSong = songLink.replace("/mp3", "")
-        await bot.reply_to(message, "Fetching song...")
+        await bot.reply_to(message, "Finding Song Using Drawiz Spotify Bot...")
         DownloadSong = "bash magic.sh '{}' -m -t".format(realSong)
         os.system(DownloadSong)
         f = open("link.txt", "r")
@@ -94,7 +94,7 @@ async def download_mp3(message):
     elif str.find("album")!=-1 or str.find("playlist")!=-1:
         print("is album or playlist")
         realSong = songLink.replace("/mp3", "")
-        await bot.reply_to(message, "Fetching album / playlist. This will take a while.")
+        await bot.reply_to(message, "Finding album / playlist Using Drawiz Spotify Bot. This will take a while.")
         DownloadSong = "bash magic.sh '{}' -m -a".format(realSong)
         os.system(DownloadSong)
         f = open("link.txt", "r")
@@ -105,7 +105,7 @@ async def download_mp3(message):
     else:
         print("is maybe query")
         realSong = songLink.replace("/mp3", "")
-        tryQuery = "Trying to search for '{}' on Spotify...".format(realSong)
+        tryQuery = "Trying to search for '{}' on Drawiz Spotify Bot...".format(realSong)
         await bot.reply_to(message, tryQuery)
         DownloadSong = "bash magic.sh '{}' -m -t".format(realSong)
         os.system(DownloadSong)
