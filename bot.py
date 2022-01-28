@@ -18,8 +18,7 @@ Send a spotify song link to see the magic.
 Use /flac for FLACs and use /mp3 for MP3s.
 
 For example: /flac https://open.spotify.com/track/2iUXsYOEPhVqEBwsqP70rE?si=833f974040c341d0
-OR: /flac Write a Song Name With Song Artist (Unstoppable - Sia)
-""")
+OR: /flac Write a Song Name With Song Artist (Unstoppable - Sia) """)
 
 @bot.message_handler(commands=['more'])
 async def more(message):
