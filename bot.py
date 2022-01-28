@@ -8,7 +8,7 @@ botToken = "5286223389:AAHI_d6AmnuDsNbOomWYIQJqEEudi1NRBNA"
 
 bot = AsyncTeleBot(botToken, parse_mode=None)
 
-print("spotBot is up and running.")
+print("Drawiz Info. Bot Started.")
 
 @bot.message_handler(commands=['help'])
 async def send_welcome(message):
@@ -19,7 +19,6 @@ Use /flac for FLACs and use /mp3 for MP3s.
 
 For example: /flac https://open.spotify.com/track/2iUXsYOEPhVqEBwsqP70rE?si=833f974040c341d0
 OR: /flac Write a Song Name With Song Artist (Unstoppable - Sia)
-\
 """)
 
 @bot.message_handler(commands=['more'])
