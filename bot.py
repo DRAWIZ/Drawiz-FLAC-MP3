@@ -42,7 +42,11 @@ async def faq(message):
     """)
 @bot.message_handler(commands=['start'])
 async def start_check(message):
-    await bot.reply_to(message, "Welcome To Drawiz Spotify Downloader 🎵 Use Command /help for More Details.")
+    await bot.reply_to(message, """  \ 
+        Welcome To Drawiz Spotify Downloader Bot 🎵.
+        Use command /help for More Details.
+        \
+        """)
 
 @bot.message_handler(commands=['flac'])
 async def download_flac(message):
