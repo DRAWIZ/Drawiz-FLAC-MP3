@@ -25,6 +25,16 @@
 
 - Enjoy With your Drawiz Spotify Downlloader Bot.
 
+# Bot Commands
+```
+start - Check Wheather bot is alive
+mp3 - Hold cmd and paste your spotify link or type song name for .mp3 format
+flac - Hold cmd and paste your spotify link or type song name for .flac format
+more - more bot and groups from Drawiz
+help - All cmds with description
+ 
+```
+
 
 ### Credits and thanks ###
 - [spotDL](https://github.com/spotdl) for their work
