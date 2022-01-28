@@ -1,7 +1,7 @@
 # Drawiz Spotify Bot #
 ## Telegram Bot that Download songs from Spotify using spotDL Binary ##
 
-### Bot in action ###
+### Demo Bot Picture ###
 ![demo](.github/assets/demo.png)
 
 
@@ -9,25 +9,22 @@
 
 - Download FLAC / MP3 songs / playlist / album from Spotify.
 
-### Setup ###
+### Heroku Depoly ###
 
-`
-bash setup.sh
-`
+- Open Bot.py Change bottoken at line 7
 
-### Use Bot ###
+- Just Create an App
 
-- Fill in bot token inside bot.py and then:
+- Open Deploy And Connect with Github
 
-`
-python bot.py
-`
+- Search With github name and in Mannual Deploy 
 
-and see the magic.
+- Check wheather the depoly Branch in Master and select depoly Branch
+ 
+- Open Resource And Enable the worker python bot.py
 
-### To-Do ###
-- GitHub workflow support (it actually already works but not public yet)
-- More features, e.g. song searching (wip)
+- Enjoy With your Drawiz Spotify Downlloader Bot.
+
 
 ### Credits and thanks ###
 - [spotDL](https://github.com/spotdl) for their work
