@@ -13,31 +13,19 @@ print("spotBot is up and running.")
 @bot.message_handler(commands=['help'])
 async def send_welcome(message):
     await bot.reply_to(message, """\
-This bot can download songs / albums / playlists from Spotify & Soundcloud as FLAC (spotify only) and MP3.
+This bot can download songs / albums / playlists from Spotify as FLAC and MP3.
 Send a spotify song link to see the magic.
 Use /flac for FLACs and use /mp3 for MP3s.
-Use /sc to download songs from SoundCloud. Only LINKS are supported!
 
 For example: /flac https://open.spotify.com/track/2iUXsYOEPhVqEBwsqP70rE?si=833f974040c341d0
-OR: /flac rewrite the stars anne marie
-
-This bot uses spotDL (https://github.com/spotDL). Hats off to their work.
-This bot uses scdl (https://github.com/flyingrub/scdl). Hats off to their work.
-This bot uses pyTelegramBotAPI (https://github.com/eternnoir/pyTelegramBotAPI).
-Bot source code is available at https://github.com/rain2wood/spotBot-OSS.
+OR: /flac Write a Song Name With Song Artist (Unstoppable - Sia)
 \
 """)
 
-@bot.message_handler(commands=['faq'])
-async def faq(message):
+@bot.message_handler(commands=['more'])
+async def more(message):
     await bot.reply_to(message, """ \
-    Q: My song isn't right! What Can I do?
-    A: Try to use another Spotify link.
-
-    Q: My lyrics aren't right! What can I do?
-    A: I don't know either. Just don't read lyrics.
-
-    Note that the tool fetches results from YouTube Music and it isn't 100 percent accurate.
+    You can see more from Drawiz @torrentleechergroup
     \
     """)
 @bot.message_handler(commands=['start'])
@@ -127,19 +115,5 @@ async def download_mp3(message):
         cleansong = "rm -rf link.txt"
         os.system(cleansong)
 
-@bot.message_handler(commands=['sc'])
-async def download_soundcloud(message):
-    chat_id = message.chat.id
-    songLink = message.text
-    realSong = songLink.replace("/sc", "")
-    print("attempt to download track from soundcloud")
-    await bot.reply_to(message, "Fetching song from link...")
-    DownloadSong = "bash magic.sh {} -sc -x".format(realSong)
-    os.system(DownloadSong)
-    f = open("link.txt", "r")
-    text = f.read()
-    await bot.send_message(chat_id, text)
-    cleansong = "rm -rf link.txt"
-    os.system(cleansong)
 
 asyncio.run(bot.infinity_polling())
