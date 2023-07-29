@@ -1,6 +1,12 @@
 # Drawiz Spotify Bot #
 ## Telegram Bot that Download songs from Spotify using spotDL Binary ##
 
+<p align="center">
+<a href="https://heroku.com/deploy?template=https://github.com/DRAWIZ/Drawiz-FLAC-MP3">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+</a>
+</p>
+
 ### Demo Bot Picture ###
 ![demo](.github/assets/demo.png)
 
