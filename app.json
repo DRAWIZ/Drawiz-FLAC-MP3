@@ -2,7 +2,7 @@
   "name": "Telegram",
   "description": "A bot",
   "keywords": ["telegram"],
-  "repository": "https://github.com/drawizmonarch12/BOT",
+  "repository": "https://github.com/drawizmonarch12/Drawiz-FLAC-MP3",
   "success_url": "https://t.me/DrawizKingdom",
   "env": {},
   "stack": "container"
