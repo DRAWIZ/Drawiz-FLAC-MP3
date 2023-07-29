@@ -1,0 +1,9 @@
+{
+  "name": "Telegram",
+  "description": "A bot",
+  "keywords": ["telegram"],
+  "repository": "https://github.com/drawizmonarch12/BOT",
+  "success_url": "https://t.me/DrawizKingdom",
+  "env": {},
+  "stack": "container"
+}
