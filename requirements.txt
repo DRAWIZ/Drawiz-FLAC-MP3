@@ -4,3 +4,5 @@ asyncio
 aiohttp
 scdl
 python-telegram-bot
+ffmpeg
+ffmpy
