@@ -1,2 +1,2 @@
-worker: bash start.sh
+worker: bash run.sh
 worker: python bot.py
