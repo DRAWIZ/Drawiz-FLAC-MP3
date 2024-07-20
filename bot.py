@@ -25,7 +25,7 @@ OR: /flac Write a Song Name With Song Artist (Unstoppable - Sia)
 @bot.message_handler(commands=['more'])
 async def more(message):
     await bot.reply_to(message, """ \
-    You can see more from Drawiz @DRAWIZ
+    You can see more from Drawiz @DRAWIZRipzz
     \
     """)
 @bot.message_handler(commands=['start'])
