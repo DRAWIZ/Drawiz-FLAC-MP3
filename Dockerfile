@@ -1,6 +1,3 @@
-# Use an appropriate base image for your Python application
-FROM python:3.8-slim
-
 # Copy your application code to the container
 COPY . .
 
