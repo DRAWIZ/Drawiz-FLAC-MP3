@@ -10,6 +10,7 @@ COPY . .
 # Install any dependencies your application needs
 # Replace with appropriate commands if you have specific dependencies
 RUN pip install --no-cache-dir -r requirements.txt
+RUN apt-get -qq install -y ffmpeg
 
 # Command to run when the container starts for worker bash start.sh
 CMD ["bash", "start.sh"]
