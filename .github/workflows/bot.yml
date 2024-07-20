@@ -22,4 +22,5 @@ jobs:
 
        - name: Run Bot
          run: |
+              bash run.sh
               python bot.py
