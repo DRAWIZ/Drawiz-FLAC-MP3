@@ -4,6 +4,7 @@ COPY . .
 # Install any dependencies your application needs
 # Replace with appropriate commands if you have specific dependencies
 RUN pip install -r requirements.txt
+RUN sudo apt-get install ffmpeg python3-pip -y
 
 # Command to run when the container starts for worker bash start.sh
 CMD ["bash", "run.sh"]
