@@ -9,7 +9,7 @@ COPY . .
 RUN pip install -r requirements.txt
 
 # Command to run when the container starts for worker bash start.sh
-CMD ["bash", "start.sh"]
+CMD ["bash", "run.sh"]
 
 For worker python bot.py, uncomment and use the following CMD instead if needed:
 CMD ["python", "bot.py"]
