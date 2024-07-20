@@ -18,7 +18,7 @@ jobs:
        
        - name: Setup Env
          run: |
-              sudo bash setup.sh
+              sudo bash run.sh
 
        - name: Run Bot
          run: |
