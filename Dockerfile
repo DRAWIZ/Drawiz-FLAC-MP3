@@ -14,5 +14,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Command to run when the container starts for worker bash start.sh
 CMD ["bash", "start.sh"]
 
-# For worker python bot.py, uncomment and use the following CMD instead if needed:
-# CMD ["python", "bot.py"]
+For worker python bot.py, uncomment and use the following CMD instead if needed:
+CMD ["python", "bot.py"]
